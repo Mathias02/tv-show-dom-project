@@ -1,3 +1,85 @@
+
+*, *::before, ::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #root {
-  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 85vw;
+  min-height: 100vh;
+  color: #fffbfb;
+  background-color: #2a612b;
+ 
+}
+img{
+  width: 100%;
+  object-fit: cover;
+}
+
+/*-----------------------------------------------------header------------------------------------------------*/
+
+#root .header{
+  padding: 2px;
+  display: grid;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin: 0 5px 0;
+  width: 100%;
+  height: 75px;
+  background-color: #142203;
+  grid-template-columns: repeat(2, 1fr);
+}
+.formContainer{
+padding: 6px;
+}
+.formContainer input[type=search], input[type=submit]{
+  padding: 6px;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 3px;
+}
+input[type=submit]{
+  cursor: pointer;
+  width: 4rem;
+  font-size: 17px;
+}
+input[type=submit]:hover{
+color: #ffffff;
+font-weight: 500;
+background-color: #81afa0;
+}
+::placeholder{
+  font-size: 16px;
+}
+.valElement{
+  padding: 2px;
+}
+.valElement .valSelect{
+  border-radius: 3px;
+  padding: 6px;
+  font-size: 16px;
+  width: 4rem;
+  border: 0;
+  outline: none;
+}
+/*----------------------------------------------main--------------------------------------------*/
+.main{
+  display:  grid;
+  padding: 4px;
+  width: 85vw;
+  margin: 0 auto;
+  grid-template-columns:  repeat(3, 1fr);
+  gap: 4px;
+}
+.main > div{
+  padding: 4px;
 }
