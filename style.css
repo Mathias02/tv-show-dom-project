@@ -1,8 +1,11 @@
-
-*, *::before, ::after{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  background-color: #81afa0;
 }
 
 #root {
@@ -12,7 +15,6 @@
   flex-direction: column;
   margin: 0 auto;
   width: 85vw;
-  min-height: 100vh;
   color: #fffbfb;
   background-color: #2a612b;
  
@@ -32,6 +34,7 @@ img{
   gap: 2px;
   margin: 0 5px 0;
   width: 100%;
+  padding: 4px;
   height: 75px;
   background-color: #142203;
   grid-template-columns: repeat(2, 1fr);
